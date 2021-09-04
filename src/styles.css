@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    /* background-image: url(images/flappy-bird-background.png); */
+    
 }
+
+.header{
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    text-align: center;
+    padding: 5%;
+}
+
 #game{
     width: 400px;
     height: 500px;
     border: 1px solid black;
     margin: auto;
     overflow: hidden;
+    /* background: none; */
+
 }
 #block{
     width: 50px;
@@ -16,6 +30,7 @@
     position: relative;
     left: 400px;
     animation: block 2s infinite linear;
+    /* background: none; */
 }
 @keyframes block{
     0%{left:400px}
@@ -29,4 +44,6 @@
     left: 400px;
     top: -500px;
     animation: block 2s infinite linear;
+    /* background: none;
+    z-index: -2; */
 }
